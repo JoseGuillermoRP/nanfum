@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    
+
+    <title>Nam Fun</title>
+  </head>
+  <body>
+
+  <style>
+      @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700');
+      body{
+          background: #3E3E3E;
+      }
+      .android{
+          font-family: 'Open Sans Condensed', sans-serif;
+          background: #CACACA;
+          margin-top: 20px;
+       position: fixed;
+        left: 0;
+        right: 0;
+        top:0;
+        margin: 0 auto;
+          border:solid ;
+           width: 360px;
+    border:solid;
+          height: 662px;
+      }
+      .texbox{
+         background: #CACACA;
+        display: block;
+        margin:auto;
+        text-align: left;
+        border: none;
+         border-bottom: 2px solid;
+        font-size: 20px;
+        width: 300px;
+       height: 30px;
+    
+      }
+      .Ingresar{
+        display: block;
+        margin:auto;
+        width: 330px;
+        height: 35px;
+        border-radius: 5px;
+          background: #851B20;
+          color: white;
+          font-size: 20px;
+      }
+      .imagen img{
+          float: left;
+          margin-left: 10px;
+          margin-top:10px;
+        width: 20px;
+      }
+      .titulo{
+          margin-top: 60px;
+          margin-left: 20px;
+          font-size: 20px;
+          margin-bottom: -15px;
+          font-weight: bold;
+          
+      }
+      .texto{
+          margin-left: 20px;
+      }
+
+.a{
+  text-align: center;
+  font-size: 16px;
+  color: #6A6767;
+    text-decoration: none;
+}   
+
+</style>
+  <div class="android" >
+<script type="text/javascript">
+      function validar(){
+          var usuario = document.getElementById("usuario").value;
+      
+          var contraseña = document.getElementById("contraseña").value;
+          if(usuario=="Admin"&&contraseña=="1234"){
+              alert("usuario y contraseña validos");
+             document.location=("presentacion/catalogo.html");
+             
+          }else{
+              alert("no es valido tu correo y usuario");
+          }
+      }
+</script>
+
+<header class="imagen">
+<a href="index.html"><img src="imagenes/flecha.png"  alt=""></a>
+ 
+</header>
+<article class="titulo">
+    <h1>INICIAR SESIÓN</h1>
+</article>
+   <article class="texto">
+       <P>Por favor, ingresa la siguiente información</P>
+   </article>
+    <br>
+     <br>
+
+     <input type="text" placeholder="Usuario" id="usuario" class="texbox">
+     <br>
+    <input type="password" placeholder="Contraseña" id="contraseña" class="texbox">
+    <br>
+    <br>
+<input type="button" value="Ingresar" class="Ingresar" onclick="validar()"  >
+    
+      <br>
+      
+      <center><a href="" class="a">Olvidé mi contraseña</a></center>
+      
+    
+
+  </div>
+  
+ 
+  
+  
+
+
+   
+
+ 
+
+  </body>
+</html>

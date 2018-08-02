@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    
+
+    <title>Nam Fun</title>
+  </head>
+  <body>
+
+  <style>
+      @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700');
+      body{
+          background: #3E3E3E;
+      }
+      .android{
+          font-family: 'Open Sans Condensed', sans-serif;
+          background: #CACACA;
+          margin-top: 20px;
+       position: fixed;
+        left: 0;
+        right: 0;
+        top:0;
+        margin: 0 auto;
+          border:solid ;
+           width: 360px;
+    border:solid;
+          height: 662px;
+      }
+      .fondo{
+          margin-top: 19px;
+          background: white;
+          
+          
+      }
+      .texbox{
+        
+        margin-left: 0.5px;
+        text-align: left;
+      background: #F0EFEF;
+        font-size: 20px;
+        width: 353px;
+       height: 20px;
+    
+      }
+      .Ingresar{
+        display: block;
+        margin:auto;
+        width: 330px;
+        height: 35px;
+        border-radius: 5px;
+          background: #3578E5;
+          color: white;
+         font-size: 15px;
+          font-weight: bold;
+      }      .Ingresar1{
+        display: block;
+        margin:auto;
+        width: 200px;
+        height: 35px;
+        border-radius: 5px;
+          background: #00A400;
+          color: white;
+          font-size: 15px;
+          font-weight: bold;
+      }
+      .menu{
+  
+          position: fixed;
+     width: 360px;
+          height: 20px;
+          color: white;
+          background: #3B5998;
+          font-size: 14px;
+          text-align: center;
+          
+      }
+      .facebook{
+        margin-top: -3px;
+          
+      }
+  
+      .titulo{
+          margin-top: 60px;
+          margin-left: 20px;
+          font-size: 20px;
+          margin-bottom: -15px;
+          font-weight: bold;
+          
+      }
+      .texto{
+          margin-left: 20px;
+      }
+           .footer{
+            width: 360px;
+          height: 20px;
+          background: #3B5998;
+           color: #fff;
+          position: fixed;
+          bottom: 0;
+        
+      }
+      .exit{
+          text-decoration: none;
+          color: #fff;
+          margin-top: -0.1px;
+          text-align: right;
+          margin-right: 5px;
+          font-weight: bold;
+          font-size: 13px;
+      }
+   
+
+.a{
+    
+  text-align: center;
+  font-size: 12px;
+  color: #7596C8;
+    text-decoration: none;
+}   
+      .linea{
+        width: 140px;
+          height: 0.4px;
+          background: #3F3F3F;
+      }
+      
+      label{
+          font-size: 12px;
+          margin-left: 3px;
+      }
+
+</style>
+  <div class="android" >
+<script type="text/javascript">
+      function validar(){
+          var usuario = document.getElementById("usuario").value;
+      
+          var contraseña = document.getElementById("contraseña").value;
+          if(usuario=="Admin"&&contraseña=="1234"){
+              alert("usuario y contraseña validos");
+             document.location=("presentacion/catalogo.html");
+             
+          }else{
+              alert("no es valido tu correo y usuario");
+          }
+      }
+</script>
+
+<header class="menu">
+ <h3 class="facebook">Facebook</h3>
+</header>
+  
+     <div class="fondo">
+<label for="contraseña">Ingresa tu correo electrónico o teléfono</label>
+     <input type="text"  name="usuario"id="usuario" class="texbox">
+     <br>
+     <label for="contraseña">Ingresa la contraseña</label>
+    <input type="password"  name="contraseña"id="contraseña" class="texbox">
+    <br>
+    <br>
+<input type="button" value="Iniciar sesión" class="Ingresar" onclick="validar()"  >
+<br>
+
+ <div style="display: flex;">
+     <hr class="linea"/> <p style="margin-top: -5px;">o</p> <hr class="linea"/>
+ </div>
+
+   <input type="button" value="Crear cuenta nueva" class="Ingresar1"   >
+    
+      <br>
+      
+      <center><a href="" class="a">Olvidé mi contraseña</a>-<a href="" class="a">Servicio de ayuda</a></center>
+      
+    
+</div>
+  <footer class="footer">
+    <p class="exit"> <a href="index.html" style="text-decoration: none; color: #fff;">Exit</a></p>
+      </footer>
+  </div>
+  
+
+  
+  
+
+
+   
+
+ 
+
+  </body>
+</html>

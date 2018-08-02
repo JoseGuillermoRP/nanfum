@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1,maximun-scale=1, minimun-scale=1">
+    <link rel="stylesheet" href="../css/fontello.css">
+
+    <title>Nam Fun</title>
+  </head>
+  <body>
+
+  <style>
+     @import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+      *{
+          margin: 0;   
+          padding: 0;
+          box-sizing: border-box;
+      }
+      body{
+          background:#3E3E3E;
+          font-family: 'Fjalla One', sans-serif;
+
+      }
+      .android{
+    background:black;
+        left: 0;
+        right: 0;
+        top:0;
+        margin: 0 auto;
+          border:solid ;
+           width: 359px;
+    border:solid;
+    margin-bottom: 50px;
+      }
+      header {
+          top:0;
+          width: 356px;
+          height: 65px;
+          background: #FBA919;
+         
+          color: #fff;
+          display: inline-block;
+          position: fixed;
+          z-index: 100;
+          
+      }
+      .footer{
+          width: 356px;
+          height: 50px;
+          background:  #FBA919;
+           color: #fff;
+          position: fixed;
+          bottom: 0;
+        
+          
+
+      }
+   
+      .contenedor{
+          
+          display: flex;
+          text-align: center;
+          
+      }
+      .imagen{
+          background: black;
+          width: 176px;
+          height: 130px;
+          border: solid 2px;
+          border-radius: 5px;
+          border-color: black;
+          margin-top: 2px;
+      }
+      .imagen1{
+          background:black;
+          width: 352px;
+          height: 130px;
+          border: solid 2px ;
+          border-color: black;
+           border-radius: 5px;
+          margin-top: 2px;
+      }
+      .coteiner1{
+          width: 98%;
+          margin: auto;
+      }
+      #menu-bar{
+          display: none;
+      }
+      .menu{
+/*          display: none;*/
+          position: absolute;
+          top: 65px;
+          left: 0;
+          width: 100%;
+          height: 100vh;
+          background: rgba(51,51,51,0.9);
+          transition: all 0.5s;
+             transform:  translateX(-250%);
+          
+      }
+      .comidas{
+          margin-top: 62px;
+      }
+
+      .menu a{
+          display: block;
+          color: #fff;
+          height: 50px;
+          text-decoration: none;
+          padding: 15px;
+          border-bottom: 1px solid rgba(255,255,255,0.5);
+      }
+      .menu a:hover{
+          background: rgba(255,255,255,0.3);
+      }
+      #menu-bar:checked ~ .menu {
+                 transform:  translateX(0%)
+      }
+      h3{
+          margin-left: 60px;
+          float: left;
+        font-size: 17px;
+      }
+      .logo{
+          margin-left:-26px;
+          margin-top: -11px;
+          float: left;
+      }
+      header label{
+          float: right;
+          font-size: 22px;
+          margin: 6px 0;
+          cursor: pointer;
+      }
+      header .coteiner1{
+          margin-top: 13px;
+          display: table;
+      }
+      .icono{
+          display: inline-block;
+          width: 55px;
+          margin-left: 18px;
+          margin-right: -6px;
+              margin-top:16px;
+          
+      }
+      a.footer{
+          color: #fff;
+      }
+      .button{
+           margin-top: 86px;
+          font-size: 18px;
+          text-decoration: none;
+      margin-left: 21px;
+          width: 140px;
+          color: #fff;
+          font-weight: bold;
+              font-size: 20px;
+      }
+            .button1{
+         
+         margin-top: 86px;
+        margin-left: 19px;
+          font-size: 30px;
+          text-decoration: none;
+          width: 300px;
+          color: #fff;
+      }
+      h4{
+          color: #fff;
+          text-align: justify;
+          margin-left: 10px;
+          margin-top: 4px;
+        margin-bottom: -6px;
+         font-size: 22px 
+          
+      }
+      
+      
+</style>
+  <div class="android" >
+  <header>
+     
+      <div class="barra">
+      <div class="coteiner1" >
+      <img src="../imagenes/Recurso%201@2x.png" class="logo" width="190px" alt="">
+     
+         <h3>BIENVENIDO <BR>A NAM FUN</h3>
+     <input type="checkbox" id="menu-bar">
+     <label for="menu-bar" class="icon-menu"></label>
+    <nav class="menu">
+         
+              <a href="">Mi Cuenta</a>
+              <a href="">Producto Adicionales</a>
+              <a href="">Paquetes</a>
+              <a href="../index.html">Cerrar sesión</a>
+         
+  
+     </nav>
+     </div>
+         
+  </div>
+      
+  </header>
+ 
+<div class="comidas">
+  <div class="contenedor">
+     <a href="producto1.html" style="text-decoration: none;" >
+      <div class="imagen1" style="background-image:url(../imagenes/sopa/sopawantan1.PNG)">
+          <p class="button1">Sopas</p>
+      </div>
+      </a>
+      
+  </div>
+    <div class="contenedor">
+     <a href="producto1.html" style="text-decoration: none;" >
+      <div class="imagen1" style="background-image:url(../imagenes/tallarin/tallarindepollo.PNG);background-position: top">
+          <p class="button1">Tallarin Nam Fum</p>
+      </div>
+      </a>
+      
+  </div>
+    <div class="contenedor">
+     <a href="producto1.html" style="text-decoration: none;" >
+      <div class="imagen1" style="background-image:url(../imagenes/pollo/polloconverdura.jpg);background-position: center;background-size:370px">
+          <p class="button1">Pollo con verdura</p>
+      </div>
+      </a>
+      
+  </div>
+  <div class="contenedor">
+     <a href="producto3.html" style="text-decoration: none"> 
+     <div class="imagen" style="background-image: url(../imagenes/chaufa/chaufadepollo.PNG);background-position: center;background-size: 270px">
+         <p class="button">Arroz chaufa</p>
+     </div>
+     </a>
+          <a href="producto3.html" style="text-decoration: none"> 
+     <div class="imagen" style="background-image: url(../imagenes/platosespeciales/pollochijaukay.PNG)">
+         <p class="button">Platos especiales<p>
+     </div>
+     </a>
+  </div>
+      <div class="contenedor">
+     <a href="producto1.html" style="text-decoration: none;" >
+      <div class="imagen1" style="background-image:url(../imagenes/wantanes/wantan.PNG);background-position: center;background-size:370px">
+          <p class="button1">Wantanes</p>
+      </div>
+      </a>
+      
+  </div>
+
+
+
+
+</div>
+  <footer class="footer">
+<div class="icon-casa icono"></div><div class="icon-buscar icono"></div><div class="icon-corazon icono "><a href=""></a></div>  <div class="icon-usuario icono "><a href=""></a></div> <div class="icon-carrito icono"><a href=""></a></div>
+  </footer>
+ 
+  </div>
+  
+  
+  
+  
+  
+
+
+   
+
+ 
+
+  </body>
+</html>
